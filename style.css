@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+body{
+    background-color: #eee;
+}
+
+/* index css */
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -2;
+}
+
+.video-overlay{
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -1;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    color: white;
+    text-align: center;
+    top: 0;
+}
+
+header h1{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    font-size: 28px;
+}
+
+.login-container{
+    width: 100%;
+    height: 100vh;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+}
+
+.login-form{
+    width: 380px;
+    height: 480px;
+    background-color: white;
+    margin-top: 0;
+    justify-content: center;
+    gap: 15px;
+    box-shadow: 0 10px 30px -12px rgb(0 0 0 / 42%), 0 4px 25px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
+}
+
+.login-panel{
+    width: 380px;
+    height: 480px;
+    background-color: #007bff;
+    padding:50px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 30px -12px rgb(0 0 0 / 42%), 0 4px 25px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
+}
+
+.login-panel-content{
+    width: auto;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.login-panel-content h2{
+    font-size: 64px;
+}
+
+form{
+    width: auto;
+    height: auto;
+    background-color: white;
+    padding:50px;
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px -12px rgb(0 0 0 / 42%), 0 4px 25px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+}
+
+input{
+    width: 310px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+input[type=submit]{
+    width: 320px;
+    height: 40px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+}
+
+.index-content{
+    width: 100%;
+    height: 60vh;
+    background-color: white;
+    display: flex;
+}
+
+.index-content-links, .index-content-rechts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-content-links p, .index-content-rechts p{
+    width: 75%;
+}
+
+footer{
+    width: 100%;
+    height: 10vh;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* admin/klant css */
+
+.admin-container, .klant-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+nav{
+    width: 15%;
+    height: 100vh;
+    color: white;
+    background-color: #007bff;
+    box-shadow: 0 10px 30px -12px rgb(0 0 0 / 42%), 0 4px 25px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav h2{
+    width: 80%;
+    border-bottom: 1px solid white;
+    font-size: 26px;
+    padding-bottom: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+nav ul{
+    width: 80%;
+    height: auto;
+    margin-top: 40px;
+}
+
+nav ul li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    list-style-type: none;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.admin-content, .admin-content-gegevens, .klant-content{
+    width: 85%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.klant-content{
+    align-items: center;
+}
+
+.admin-content-gegevens{
+    display: block;
+}
+
+table{
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-spacing: 5px;
+    margin-top: 7vh;
+    border-collapse: collapse;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px -12px rgb(0 0 0 / 42%), 0 4px 25px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
+}
+
+tr{
+    border-bottom: 1px black solid;
+}
+
+tr:last-child
+{
+   border-bottom: none;
+}
+
+th,td{
+    padding: 12px 8px;
+}
+
+.klant-content{
+    flex-direction: column;
+}
+
+.gegevens-forms{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.gegevens-tables{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gegevens-form{
+    max-height: 70%;
+    margin-top: 0;
+}
+
+.gegevens-table{
+    margin:0;
+}
+
+.opties{
+    text-align: center;
+}
+
+.optie-button{
+    padding: .5px 4px .5px 4px;
+}
+
+.stroom, .gas{
+    width: 100%;
+    height: auto;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+canvas{
+    width: 40%;
+    height:30%;
+    max-height: 326px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px -12px rgb(0 0 0 / 42%), 0 4px 25px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
+}
+
+.info-stroom, .info-gas{
+    width: 20%;
+    min-height: 100%;
+    color: rgba(54, 162, 235);
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 30px -12px rgb(0 0 0 / 42%), 0 4px 25px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
+}
+
+.totale-verbruik-stroom, .totale-verbruik-gas, .totale-kosten-stroom, .totale-kosten-gas{
+    font-size: 16px;
+}
